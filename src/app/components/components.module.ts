@@ -4,14 +4,15 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+
   ],
   exports:[
     HeaderComponent,
@@ -21,7 +22,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class ComponentsModule { }
