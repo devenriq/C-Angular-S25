@@ -2,16 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { initializeApp } from 'firebase/app';
 import { Environment } from 'src/environments/environment';
+import {  } from "@angular/fire/auth";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-import {  } from "@angular/fire/auth";
+
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +16,7 @@ import { PagesModule } from './pages/pages.module';
   ],
   imports: [
     BrowserModule,
+
     AppRoutingModule,
     ComponentsModule,
     PagesModule
