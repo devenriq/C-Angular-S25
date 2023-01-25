@@ -1,0 +1,25 @@
+<h1>Lista de productos</h1>
+
+<table>
+  <thead>
+    <th>Producto</th>
+    <th>Costo</th>
+    <th>Imagen</th>
+    <th>Tools</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.producto }}</td>
+      <td>{{ product.costo }}</td>
+      <td><img src="product.foto" alt="" /></td>
+      <td>
+        <button
+          class="bg-red-500 rounded-full px-4 py-2 text-white hover:bg-red-700"
+          (click)="onClickDelete(product)"
+        >
+          Eliminar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
