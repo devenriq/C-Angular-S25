@@ -26,10 +26,11 @@ var config = {
   ],
   imports: [
     BrowserModule,
-
     AppRoutingModule,
+
     ComponentsModule,
     PagesModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
   ],
